@@ -1,0 +1,9 @@
+# Ignore system files
+AppData/
+*.dat
+*.xml
+*.exe
+*.log
+*.bak
+NTUSER.DAT
+
