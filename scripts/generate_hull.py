@@ -35,8 +35,6 @@ MAX_BEAM = 0.48          # single demi-hull (narrow for low takeoff drag)
 DEPTH = 0.72             # keel to deck
 DRAFT = 0.18             # canoe-body draft at DWL (lightly immersed)
 LCB_FRAC = 0.52          # longitudinal center of buoyancy from FP / LWL
-# Target ~0.28 m³ per demi-hull ≈ 290 kg SW; both ≈ 580 kg (reserve over 470 kg racing)
-TARGET_DEMI_VOLUME_M3 = 0.28
 N_STATIONS = 21
 N_WATERLINES = 12
 FP_OVERHANG = (LOA - LWL) * 0.45
