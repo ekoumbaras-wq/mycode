@@ -1,0 +1,87 @@
+# Vanguard F9 — principal dimensions & design constants
+# Units: SI (m, kg, m^2) unless noted
+
+project:
+  name: Vanguard F9
+  type: foiling_catamaran
+  version: "0.1.0"
+  loa_class_m: [7.0, 10.0]
+  selected_loa_m: 9.0
+
+configuration:
+  selected: foiling_catamaran
+  alternatives_ranked:
+    - foiling_catamaran
+    - foiling_trimaran
+    - foiling_monohull
+  rationale: >
+    Maximum righting moment per kilogram and proven full-flight race
+    architecture in the 7–10 m band.
+
+hull:
+  loa_m: 9.00
+  lwl_m: 8.60
+  beam_overall_m: 6.00
+  beam_cl_to_cl_m: 5.20
+  demi_hull_max_beam_m: 0.48
+  demi_hull_depth_m: 0.72
+  canoe_body_draft_m: 0.18
+  freeboard_amidships_m: 0.54
+  stations: 21
+  lcb_fraction_lwl: 0.52   # from FP
+  prismatic_target_cp: 0.58
+  cx_midship_target: 0.62
+  entry:
+    half_angle_deg: 8.5
+    wave_piercing: true
+  aft:
+    flat_buttock_fraction_lwl: 0.25
+    transom_immersion_fraction: 0.15
+
+foils:
+  main:
+    type: L-foil   # T-foil alternate
+    span_m: 1.35
+    mean_chord_m: 0.22
+    t_c_ratio: 0.14
+    takeoff_cl: 0.55
+  rudders:
+    type: T-rudder
+    span_m: 0.55
+    mean_chord_m: 0.16
+  flight:
+    target_altitude_m: 0.80
+    takeoff_boatspeed_kn: 12.0
+    design_flight_kn: [18, 32]
+
+rig:
+  mast_height_m: 13.5
+  rotating_wing_mast: true
+  sail_area_upwind_m2: 52.0
+  sail_area_downwind_m2: 95.0
+
+weights_kg:
+  demi_hulls: 95
+  beams_tramp_fittings: 55
+  foils_rudders_cases: 48
+  spars_rigging: 62
+  sails_upwind: 22
+  systems_misc: 28
+  lightship: 310
+  crew: 160
+  racing_displacement: 470
+
+performance_targets:
+  design_tws_kn: [8, 12]
+  boatspeed_band_kn: [22, 35]
+  sa_d_racing_imperial_approx: 48  # informational
+
+materials:
+  hull: carbon_epoxy_foam_sandwich
+  beams: high_modulus_carbon_box
+  foils: unidirectional_carbon
+  core: corecell_or_pet_10_15mm
+
+transport:
+  road_width_target_m: 2.50
+  beam_bolt_separation: true

@@ -1,0 +1,7 @@
+Vanguard F9 demi-hull summary
+LOA=9.0 m  LWL=8.6 m  max beam=0.48 m  draft=0.18 m
+stations=21  waterlines=12
+approx canoe volume (one hull)=0.3391 m^3
+approx canoe buoyancy (one hull, SW)=347.6 kg
+approx canoe buoyancy (both, SW)=695.2 kg
+racing displacement target=470 kg (foiling)
